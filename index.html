@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
   <body>
     <main class="overlay">
       <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
+        <h2 class="name" id="name--0">Jugador 1</h2>
         <p class="score" id="score--0">43</p>
         <div class="current">
           <p class="current-label">Current</p>
@@ -19,7 +19,7 @@
         </div>
       </section>
       <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
+        <h2 class="name" id="name--1">Jugador 2</h2>
         <p class="score" id="score--1">24</p>
         <div class="current">
           <p class="current-label">Current</p>
@@ -30,20 +30,23 @@
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new"><span class="icon">🔄</span>New game</button>
       <button class="btn btn--roll">
-        <span class="icon">🎲</span>Roll dice
+        <span class="icon">🎲</span>Lanzar Dado
       </button>
-      <button class="btn btn--hold"><span class="icon">📥</span>Hold</button>
-      <button class="btn rules"><span>📃</span> Rules</button>
+      <button class="btn btn--hold">
+        <span class="icon">📥</span>Mantener
+      </button>
+      <button class="btn rules"><span>📃</span> Reglas</button>
     </main>
     <div class="modal hidden">
       <button class="close-modal">X</button>
       <h2>Pig Game 🎲</h2>
+      <p>Cada jugador debe alcanzar 100 puntos para ganar.</p>
       <p>
-        Each player have to reach 100 points 💯.<br />
-        Roll the dice, if you got 1 you lose the points and the turn. <br />
-        You can save the points clicking 'Hold' but you'll lose the turn. <br />
-        Good luck.
+        Lanza el dado, si sale 1 pierdes el turno. acumula los puntos
+        presionando "Mantener".
       </p>
+
+      <p>Buena suerte 😁</p>
     </div>
     <script src="script.js"></script>
   </body>

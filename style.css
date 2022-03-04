@@ -210,70 +210,9 @@ main {
   display: none;
 }
 
-@media (max-width: 1280px) {
-  .modal {
-    line-height: 5rem;
-  }
-  .modal p {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 1010px) {
-  main {
-    width: 90%;
-  }
-}
-
-@media (max-width: 935px) {
-  .name {
-    font-size: 2.5rem;
-  }
-
-  .score {
-    font-size: 7rem;
-  }
-
-  .dice {
-    height: 9rem;
-  }
-
-  .btn {
-    font-size: 1.4rem;
-    padding: 0.5rem 1.2rem;
-  }
-}
-
-@media (max-width: 795px) {
-  .current-label {
-    font-size: 1.2rem;
-  }
-  .current {
-    min-width: 100px;
-  }
-
-  .modal {
-    height: auto;
-    line-height: 4rem;
-  }
-
-  .modal h2 {
-    font-size: 3.2rem;
-  }
-
-  .modal p {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 675px) {
-  .name {
-    font-size: 1.8rem;
-  }
-}
-
 @media (max-width: 620px) {
   main {
+    height: 65rem;
     display: grid;
     grid-template-columns: 65%;
     grid-template-rows: repeat(2, 1fr);
@@ -301,8 +240,17 @@ main {
     min-width: 280px;
   }
 
+  .modal p {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+
   .close-modal {
     left: 90%;
+  }
+
+  .name {
+    font-size: 2.5rem;
   }
 }
 
@@ -310,10 +258,27 @@ main {
   .btn {
     font-size: 1.1rem;
     padding: 0.4rem 0.5rem;
+    width: 120px;
+    display: grid;
+    grid-template-columns: 0.5 2fr;
+    align-items: center;
+    height: 45px;
+    column-gap: 5px;
+  }
+
+  .icon {
+    font-size: 18px;
   }
 
   .dice {
     height: 7rem;
+    top: 28.5rem;
+  }
+
+  .modal {
+    max-width: 400px;
+    width: 100%;
+    padding: 25px 10px;
   }
 }
 
